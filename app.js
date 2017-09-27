@@ -1,0 +1,18 @@
+const express = require('express');
+const app = express();
+const path = require('path');
+const port = process.env.NODE_ENV || 3000;
+
+app.set('view engine', 'hbs');
+
+app.use(express.static(path.join(__dirname,'public')));
+app.use(express.static(path.join(__dirname,'views')));
+app.use(express.static(path.join(__dirname,'app')));
+
+app.get('/',(req,res)=>{
+  res.render('index');
+})
+
+app.listen(port,(req,res)=>{
+  console.log('listening on port ' + port);
+})

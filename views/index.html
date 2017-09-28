@@ -86,6 +86,8 @@
       <div class="" align="center">
         <h1>{{endingMsg}}</h1>
         <h2>Guesses Remaining: {{totalGuess}}</h2>
+        <h2>{{answer}}</h2>
+        <h3>Langauge: {{language}}</h3>
         <h3>{{goneWord}}</h3>
       </div>
       <br>
@@ -107,11 +109,15 @@
 
 
     <div class="col-sm-2 sidenav">
+      <h3>Select Language</h3>
       <div class="well">
-        <p>ADS</p>
+        <p ng-click="languageSelectEN()"><a href="#">English</a></p>
       </div>
       <div class="well">
-        <p>ADS</p>
+        <p ng-click="languageSelectSP()"><a href="#">Spanish</a></p>
+      </div>
+      <div class="well">
+        <p ng-click="languageSelectFR()"><a href="#">French</a></p>
       </div>
     </div>
   </div>

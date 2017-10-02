@@ -8,7 +8,7 @@ app.controller('hangCTRL',function($scope){
   $scope.correctGuesses = [];
   $scope.incorrectGuesses = [];
   $scope.wordBank = ['jack','boxes','three','lingo','hanger','queen','mouse','foolish','wolf','background','number'];
-  $scope.wordBankSP = ['hola','uno','denada','taco','rojo','ocho','delicioso'];
+  $scope.wordBankSP = ['hola','uno','denada','taco','rojo','ocho','delicioso','azul'];
   $scope.wordBankFR = ['bonjour','huit','cravate','chapeau','grenouille','chaise','plague','homme','maison'];
 
   if(!$scope.language){
@@ -91,3 +91,7 @@ app.controller('hangCTRL',function($scope){
     $scope.answer = ""
   }
 })
+app.controller('weatherCTRL',function($scope){
+
+})
+//

@@ -57,23 +57,22 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="navbar-brand" href="#"><img style="height:25px;width:30px;" src="https://studio.code.org/v3/assets/z4b6afS6Ml5rvWCs3LxbnA/hangmanDead.png" alt=""></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li class="active"><a href="#">Multilingual Hangman</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="container-fluid text-center">
+<div class="container-fluid text-center" style="height:500px;">
   <div class="row content">
-    <div class="col-sm-2 sidenav">
+    <div class="col-sm-2 sidenav" style="height:500px;">
       <h3>Leader Board</h3>
       <div class="well">
         <p>Jackson</p>
@@ -82,7 +81,7 @@
         <p>Bonn</p>
       </div>
     </div>
-    <div class="col-sm-8 text-left">
+    <div class="col-sm-8 text-left" style="height:510px;">
       <div class="" align="center">
         <h1>{{endingMsg}}</h1>
         <h2>Guesses Remaining: {{totalGuess}}</h2>
@@ -96,8 +95,9 @@
         <button ng-click="submitGuess()">Guess</button>
       </div>
       <br>
+      <br>
       <div class="" align="center">
-        <button ng-click="reset()">Reset</button>
+        <button style="width:100px;" ng-click="reset()">Reset</button>
       </div>
       <br>
       <div class="" align="center">
@@ -108,7 +108,7 @@
     </div>
 
 
-    <div class="col-sm-2 sidenav">
+    <div class="col-sm-2 sidenav" style="height:500px;">
       <h3>Select Language</h3>
       <div class="well">
         <p ng-click="languageSelectEN()"><a href="#">English</a></p>
@@ -122,9 +122,10 @@
     </div>
   </div>
 </div>
-
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
+<br>
+<footer class="container-fluid text-center" style="height:150px;">
+  <h4>Made With Students In Mind</h4>
+  <h5>Bonne Chance</h5>
 </footer>
 
 </body>
